@@ -39,7 +39,7 @@ All simulations run entirely in Python using open-source tools. No hardware or p
 
 ## Simulation Methodology
 
-![Simulation Methodology Flowchart](figures/fig4_methodology.png)
+![Simulation Methodology Flowchart](fig4_methodology.png)
 
 *Fig. 1 — Simulation pipeline. Five IEEE 1547-2018 Category B inverter modes are evaluated in parallel. The backward-forward sweep power flow (pandapower) runs iteratively until the inverter control loop converges. Hosting capacity is defined as the last penetration step at which Vmax ≤ 1.05 pu (ANSI C84.1 Range A).*
 
@@ -49,7 +49,7 @@ All simulations run entirely in Python using open-source tools. No hardware or p
 
 ### Maximum Bus Voltage vs. PV Penetration
 
-![Voltage Rise vs PV Penetration](figures/fig1_voltage_rise.png)
+![Voltage Rise vs PV Penetration](fig1_voltage_rise.png)
 
 *Fig. 2 — Maximum system bus voltage across all 33 nodes as a function of PV penetration for each inverter mode. Unity PF and Volt-Watt produce identical curves below 1.05 pu because Volt-Watt does not activate until the violation threshold is crossed. Fixed PF 0.95 maintains the flattest trajectory throughout, reflecting continuous reactive absorption.*
 
@@ -57,7 +57,7 @@ All simulations run entirely in Python using open-source tools. No hardware or p
 
 ### PV Hosting Capacity Comparison
 
-![Hosting Capacity Bar Chart](figures/fig2_hc_comparison.png)
+![Hosting Capacity Bar Chart](fig2_hc_comparison.png)
 
 *Fig. 3 — PV hosting capacity (% of feeder peak load) for each IEEE 1547-2018 Category B inverter mode. Annotations show percentage-point gain over the Unity PF baseline. The +37.5 pp gain from Fixed PF 0.95 represents a 68% relative improvement in interconnectable PV capacity.*
 
@@ -65,7 +65,7 @@ All simulations run entirely in Python using open-source tools. No hardware or p
 
 ### Voltage Profile Along Feeder Trunk
 
-![Voltage Profile Along Feeder](figures/fig3_voltage_profile.png)
+![Voltage Profile Along Feeder](fig3_voltage_profile.png)
 
 *Fig. 4 — Per-bus voltage along the main feeder trunk (bus 0 = substation, bus 17 = PV injection point) at 75% PV penetration. Unity PF and Volt-Watt both breach the ANSI ceiling at bus 17 (~1.087 pu). Fixed PF 0.95 and Volt-Var suppress end-of-feeder voltage to 1.031 pu and 1.049 pu respectively.*
 
@@ -89,14 +89,14 @@ pip install pandapower numpy matplotlib scipy
 ## How to Run
 
 ```bash
-python simulation/run_simulation.py
+python run_simulation.py
 ```
 
 This runs the full five-mode hosting capacity sweep on the IEEE 33-bus feeder and prints the results table. The sweep covers PV penetration from 0% to 100% of feeder peak load in 5% increments.
 
 To regenerate all figures:
 ```bash
-python figures/make_figures.py
+python make_figures.py
 ```
 
 ---
@@ -119,14 +119,14 @@ Power flow solved via backward-forward sweep (BFS) using [pandapower](https://ww
 ```
 gridedge-2027-smart-inverter-hc/
 ├── README.md
-├── simulation/
-│   └── run_simulation.py       # Main simulation — reproduces all results
-└── figures/
-    ├── make_figures.py         # Generates all publication figures
-    ├── fig1_voltage_rise.png   # Max voltage vs PV penetration
-    ├── fig2_hc_comparison.png  # Hosting capacity bar chart
-    ├── fig3_voltage_profile.png# Voltage profile along feeder trunk
-    └── fig4_methodology.png    # Simulation methodology flowchart
+
+
+
+
+1_voltage_rise.png   # Max voltage vs PV penetration
+2_hc_comparison.png  # Hosting capacity bar chart
+3_voltage_profile.png# Voltage profile along feeder trunk
+4_methodology.png    # Simulation methodology flowchart
 ```
 
 ---
