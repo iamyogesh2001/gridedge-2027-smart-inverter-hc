@@ -1,8 +1,8 @@
-# IEEE 1547-2018 Smart Inverter Settings and PV Hosting Capacity
+# Volt-Watt Provides No Hosting Capacity Benefit: A Comparative Study of IEEE 1547-2018 Category B Inverter Modes on Radial Distribution Feeders
 
 **Submitted to:** 2027 IEEE PES Grid Edge Technologies Conference & Exposition  
 **Location:** Salt Lake City, Utah, USA — April 19–22, 2027  
-**Paper title:** Impact of IEEE 1547-2018 Smart Inverter Settings on Photovoltaic Hosting Capacity: A Simulation Study on a Standard Radial Distribution Feeder  
+**Paper title:** Volt-Watt Provides No Hosting Capacity Benefit: A Comparative Study of IEEE 1547-2018 Category B Inverter Modes on Radial Distribution Feeders  
 **Authors:** Yogesh Rethinapandian, Arun Karthik Sundararajan, Kaushik Kumar, Smrithi Prakash  
 **Affiliation:** Department of Electrical and Computer Engineering, University of Illinois Chicago
 
@@ -135,7 +135,7 @@ gridedge-2027-smart-inverter-hc/
 
 If you use this code or results, please cite:
 
-> Y. Rethinapandian, A. K. Sundararajan, K. Kumar, and S. Prakash, "Impact of IEEE 1547-2018 Smart Inverter Settings on Photovoltaic Hosting Capacity: A Simulation Study on a Standard Radial Distribution Feeder," in *Proc. 2027 IEEE PES Grid Edge Technologies Conference & Exposition*, Salt Lake City, UT, USA, Apr. 2027.
+> Y. Rethinapandian, A. K. Sundararajan, K. Kumar, and S. Prakash, "Volt-Watt Provides No Hosting Capacity Benefit: A Comparative Study of IEEE 1547-2018 Category B Inverter Modes on Radial Distribution Feeders," in *Proc. 2027 IEEE PES Grid Edge Technologies Conference & Exposition*, Salt Lake City, UT, USA, Apr. 2027.
 
 ---
 
